@@ -1,188 +1,228 @@
-Hash Identifier 🔐
+# Hash Identifier 🔐
 
-A professional cryptographic hash IDENTIFICATION tool that detects the most likely
-hash algorithm using length, patterns, prefixes, and encoding heuristics.
-Perfect for cybersecurity researchers, pentesters, developers, and students.
+A professional cryptographic **hash identification tool** that detects the most likely
+hash algorithm using **length, patterns, prefixes, and encoding heuristics**.
+Perfect for **cybersecurity researchers, pentesters, developers, and students**.
 
-GitHub: https://github.com/CyberBros435/Hash_Identifier
-
-Made by: Cyber Bro's
+**GitHub:** https://github.com/CyberBros435/Hash_Identifier  
+**Made by:** Cyber Bro's
 
 ---
 
-FEATURES ✨
+## Features ✨
 
-✅ Supports 12+ Hash Algorithms (Identification):
+✅ **Supports 12+ Hash Algorithms (Identification):**
 - MD5
 - SHA1
 - SHA224, SHA256, SHA384, SHA512
 - SHA3-224, SHA3-256, SHA3-384, SHA3-512
 - BLAKE2b, BLAKE2s
 
-✅ Password Hash Detection:
+✅ **Password Hash Detection**
 - bcrypt
 - argon2 (argon2id / argon2i / argon2d)
 - scrypt
-- PBKDF2 (framework formats)
+- PBKDF2 formats
 - phpass (WordPress / Drupal)
-- Unix crypt formats ($1$, $5$, $6$)
+- Unix crypt (`$1$`, `$5$`, `$6$`)
 
-✅ Colorful CLI Interface with ASCII banner (pyfiglet)
-✅ Confidence-Based Detection (Top match + alternatives)
-✅ Shows hash length, charset, entropy & evidence
-✅ Hacker-style loading animation
-✅ Save results to readable .txt report
-✅ Beginner & Professional friendly
+✅ **Colorful CLI Interface** (pyfiglet banner)  
+✅ **Confidence-Based Detection** (Top match + alternatives)  
+✅ **Readable Output** (length, charset, entropy, evidence)  
+✅ **Hacker-style Loading Animation**  
+✅ **Save Results to `.txt` File**  
 
 ---
 
-IMPORTANT NOTE ⚠️
+## Important Note ⚠️
 
-Some hashes share the SAME output length.
+Some hashes share the **same output length**.
 
 Example:
 - 64 hex characters can be:
-  SHA256 OR SHA3-256 OR BLAKE2s
+  - SHA256
+  - SHA3-256
+  - BLAKE2s
 
-Because of this, the tool shows POSSIBLE matches with confidence.
-100% confirmation requires knowing the source system
-(database, OS, application, framework, etc.).
+Because of this, the tool shows **possible matches with confidence**.
+**100% confirmation requires source context** (database, OS, application, framework).
 
 ---
 
-REQUIREMENTS 📦
+## Requirements 📦
 
-- Python 3.13.9
+- Python **3.13.9**
 - pip (Python package manager)
 - Git
 
 ---
 
-INSTALLATION 📥
+## Installation 📥
 
 ---
 
-WINDOWS INSTALLATION ⚙️
+### ⚙️ Windows Installation
 
-Step 1: Install Python
-Download from:
-https://www.python.org/downloads/
+**Step 1: Install Python**
+- Download from: https://www.python.org/downloads/
+- ✅ Enable **Add Python to PATH**
 
-IMPORTANT:
-During installation ENABLE:
-[✓] Add Python to PATH
-
-Step 2: Clone Repository
+**Step 2: Clone Repository**
+```cmd
 git clone https://github.com/CyberBros435/Hash_Identifier.git
 cd Hash_Identifier
+```
 
-Step 3: Install Dependencies
+**Step 3: Install Dependencies**
+```cmd
 pip install -r requirements.txt
+```
 
-Step 4: Run Tool
+**Step 4: Run Tool**
+```cmd
 python Hash_Identifier.py
+```
 
-If python command does not work:
+If `python` doesn’t work:
+```cmd
 py Hash_Identifier.py
+```
 
 ---
 
-LINUX INSTALLATION 🐧 (Ubuntu / Debian / Kali / Arch)
+### 🐧 Linux Installation (Ubuntu / Debian / Kali / Arch)
 
-Step 1: Install Python & pip
+**Step 1: Install Python & pip**
 
 Debian / Ubuntu / Kali:
+```bash
 sudo apt update
 sudo apt install -y python3 python3-pip
+```
 
 Arch:
+```bash
 sudo pacman -S python python-pip
+```
 
-Step 2: Clone Repository
+**Step 2: Clone Repository**
+```bash
 git clone https://github.com/CyberBros435/Hash_Identifier.git
 cd Hash_Identifier
+```
 
-Step 3: Install Dependencies
+**Step 3: Install Dependencies**
+```bash
 pip3 install -r requirements.txt
+```
 
-Step 4: Run Tool
+**Step 4: Run Tool**
+```bash
 python3 Hash_Identifier.py
+```
 
-Optional (Make Executable):
+**Optional: Make Executable**
+```bash
 chmod +x Hash_Identifier.py
 ./Hash_Identifier.py
+```
 
 ---
 
-macOS INSTALLATION 🍎
+### 🍎 macOS Installation
 
-Step 1: Install Homebrew (if not installed)
+**Step 1: Install Homebrew (if not installed)**
+```bash
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
 
-Step 2: Install Python
+**Step 2: Install Python**
+```bash
 brew install python
+```
 
-Step 3: Clone Repository
+**Step 3: Clone Repository**
+```bash
 git clone https://github.com/CyberBros435/Hash_Identifier.git
 cd Hash_Identifier
+```
 
-Step 4: Install Dependencies
+**Step 4: Install Dependencies**
+```bash
 pip3 install -r requirements.txt
+```
 
-Step 5: Run Tool
+**Step 5: Run Tool**
+```bash
 python3 Hash_Identifier.py
+```
 
 ---
 
-TERMUX INSTALLATION 📱 (Android)
+### 📱 Termux Installation (Android)
 
-Step 1: Update Packages
+**Step 1: Update Packages**
+```bash
 pkg update && pkg upgrade -y
+```
 
-Step 2: Install Python & Git
+**Step 2: Install Python & Git**
+```bash
 pkg install -y python git
+```
 
-Step 3: Clone Repository
+**Step 3: Clone Repository**
+```bash
 git clone https://github.com/CyberBros435/Hash_Identifier.git
 cd Hash_Identifier
+```
 
-Step 4: Install Dependencies
+**Step 4: Install Dependencies**
+```bash
 pip install -r requirements.txt
+```
 
-Step 5: Run Tool
+**Step 5: Run Tool**
+```bash
 python Hash_Identifier.py
+```
 
 ---
 
-QUICK START ⚡ (All Systems)
+### ⚡ Quick Start (All Systems)
 
+```bash
 git clone https://github.com/CyberBros435/Hash_Identifier.git && \
 cd Hash_Identifier && \
 pip install -r requirements.txt && \
 python Hash_Identifier.py
+```
 
 ---
 
-USAGE 🚀
+## Usage 🚀
 
-Run the tool:
+**Run the Tool**
+```bash
 python Hash_Identifier.py
+```
 
-How it works:
+**How It Works**
 1. Tool starts with professional ASCII banner
 2. Paste your hash
-3. Tool analyzes and shows:
+3. Tool analyzes and displays:
    - Hash length
    - Character set
    - Entropy estimate
    - Top match with confidence
    - Other possible hash types
-4. Choose Y / N to save report
+4. Choose **Y / N** to save the report
 
 ---
 
-EXAMPLE OUTPUT 📋
+## Example Output 📋
 
+```
 Input        : 5f4dcc3b5aa765d61d8327deb882cf99
 Length       : 32
 Charset      : hex (lowercase)
@@ -192,75 +232,75 @@ TOP MATCH:
 Type         : MD5
 Confidence   : 82%
 Category     : Message digest
-
-OTHER POSSIBLE TYPES:
-- NTLM
+```
 
 ---
 
-SAVING REPORTS 💾
+## Saving Reports 💾
 
-If you choose YES, the tool creates a file:
+If you select **YES**, the tool creates:
 
+```
 hash_report_<hash>_<timestamp>.txt
+```
 
-Location:
-Same directory as Hash_Identifier.py
+📁 Saved in the same directory as `Hash_Identifier.py`
 
 ---
 
-FILE STRUCTURE 📁
+## File Structure 📁
 
+```
 Hash_Identifier/
 ├── Hash_Identifier.py
 ├── requirements.txt
 ├── README.md
 └── .gitignore
+```
 
 ---
 
-TROUBLESHOOTING 🔧
+## Troubleshooting 🔧
 
-Issue: ModuleNotFoundError
-Solution:
+**Module not found**
+```bash
 pip install -r requirements.txt
+```
 
-Issue: Python command not found
-Solution:
+**Python not found**
+```bash
 python --version
-
-Reinstall Python and enable:
-Add Python to PATH
+```
+Reinstall Python and enable **Add Python to PATH**
 
 ---
 
-LICENSE 📜
+## License 📜
 
 No license yet.
 
 ---
 
-AUTHOR 👨‍💻
+## Author 👨‍💻
 
-Cyber Bro's
+**Cyber Bro's**
 
-GitHub:
-https://github.com/CyberBros435
+GitHub: https://github.com/CyberBros435
 
 ---
 
-SUPPORT 💬
+## Support ⭐
 
 If you find this tool useful:
 - ⭐ Star the repository
 - 🔗 Share with others
-- 🐞 Report bugs or suggest features
+- 🐞 Report bugs or ideas
 
 ---
 
-CHANGELOG 📝
+## Changelog 📝
 
-v1.0 (Initial Release)
+### v1.0
 - Support for 12+ hash algorithms
 - Password hash format detection
 - Colorful CLI interface
@@ -270,4 +310,4 @@ v1.0 (Initial Release)
 
 ---
 
-Happy Hash Identifying! 🔐✨
+**Happy Hash Identifying! 🔐**
